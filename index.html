@@ -9,11 +9,22 @@
 </head>
 <body>
     <header>
-        <div class= "start">Web API Quiz Game</div>
-        <p>You will be asked 5 questions testing your knowledge of Web API's and your highscore will be based on the time remaining. If you miss a question 5 seconds will be subtracted from the remaing time.</p>
-        <button class="start-button">Start</button>
+        <h1>Web API Quiz Game</h1>
+        <p>You will be asked 5 questions testing your knowledge of Web API's and your highscore will be based on the time remaining. If you miss a question 5 seconds will be subtracted from the remaining time.</p>
     </header>
-
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn">Next</button>
+        </div>
 
 
 
