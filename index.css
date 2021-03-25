@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: rgb(16, 218, 233);
+}
+
+header {
+    text-align: center;
+    margin: auto;
+}
+
+.start {
+    font-size: 6.5em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1% 30%;
+}
+
+.start-button {
+    font-size: 3.0em;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 0.2em;
+}
+
+.start-button:hover {
+    background-color: salmon;
+    transition: all 0.3s ease 0s;
+}
