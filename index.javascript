@@ -3,21 +3,35 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const timeLeftDisplay = document.querySelector('#time-left')
+timeLeft = 60
+
+function countDown() {
+    setInterval(function(){
+        if(timeLeft <=0 ) {
+            clearInterval(timeLeft = 0)
+        }
+        timeLeftDisplay.innerHTML = timeLeft
+        timeLeft -=1
+}, 6000)
+}
 
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame, countDown)
+
 
 function startGame() {
     console.log('Started')
     startButton.classList.add('hide')
-    shuffledQuestions = question.sort(() => Math.random() - .5) 
+    shuffledQuestions = questions.sort(() => Math.random() - .5) 
     currentQuestionIndex = 0 
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
 }
 
 function setNextQuestion() {
+    resetstate()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 
 }
@@ -37,6 +51,7 @@ function showQuestion(question) {
 }
 
 function resetstate() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild
@@ -62,7 +77,12 @@ function setStatusClass(element, correct) {
     }
 }
 
-const question = [
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
+const questions = [
     {
         question: 'What is the traditional wing sauce?',
         answers: [
