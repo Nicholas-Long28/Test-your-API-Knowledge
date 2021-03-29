@@ -18,7 +18,7 @@ There are no further steps to access the page.
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
-    ![Website Preview]()
+    ![Website Preview](./Assets\Quiz.png)
     ```
 ## Credits
 https://developer.mozilla.org/en-US/
