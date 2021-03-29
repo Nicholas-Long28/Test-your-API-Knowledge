@@ -3,7 +3,7 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const timerElement = document.getElementById('timer-count')
+const timerElement = document.getElementById('timer')
 var timerCount;
 
 //set the variables for the questions//
@@ -34,7 +34,12 @@ function startTimer() {
         if (timerCount <= 0) {
             console.log("end time")
         }
-    }, 6000);
+    }, 1000);
+    if (timerCount === 0) {
+        clearInterval(timer);
+        alert('GAME OVER');
+        return;
+    }
 }
 
 function setNextQuestion() {
