@@ -112,37 +112,37 @@ const questions = [
     {
         question: 'What does HTML stand for',
         answers: [
-            { text: 'Hyper', correct: false},
+            { text: 'salad', correct: false},
             { text: 'text', correct: false},
-            { text: 'markup', correct: true},
+            { text: 'HyperTextMarkupLin', correct: true},
             { text: 'link', correct: false}
         ]
     },
     {
         question: 'What does CSS stand for?',
         answers: [
-            { text: 'Cascading', correct: false},
+            { text: 'camera stars sound', correct: false},
             { text: 'Style', correct: false},
             { text: 'sheet', correct: false},
-            { text: '23', correct: true}
+            { text: 'CascadingStyleSheet', correct: true}
         ]
     },
     {
         question: 'What is an array?',
         answers: [
-            { text: 'rainbow', correct: false},
-            { text: 'street', correct: true},
-            { text: 'pizza', correct: false},
-            { text: 'corn', correct: false}
+            { text: 'A string of Elements', correct: false},
+            { text: 'rainbow', correct: true},
+            { text: 'Sunshine', correct: false},
+            { text: 'water', correct: false}
         ]
     },
     {
         question: 'How many hours have you worked?',
         answers: [
-            { text: 'none', correct: true},
+            { text: 'As many as needed', correct: true},
             { text: 'a lot', correct: false},
             { text: 'too many', correct: false},
-            { text: 'facts', correct: false}
+            { text: 'none', correct: false}
         ]
     }
  ]
