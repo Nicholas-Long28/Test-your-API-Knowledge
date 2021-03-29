@@ -1,5 +1,4 @@
 # Test-your-API-Knowledge
-# Nicholas_Long_Portfolio
 ## Description
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 - To create a quiz game and test players Web API knowledge against peers.
@@ -23,6 +22,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 https://developer.mozilla.org/en-US/
 https://www.w3schools.com/
+04-Web-APIs
+https://www.youtube.com/
 
 ## License
 MIT License

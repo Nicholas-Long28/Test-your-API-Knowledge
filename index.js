@@ -3,7 +3,7 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-var timer;
+const timerElement = document.getElementById('timer-count')
 var timerCount;
 
 //set the variables for the questions//
@@ -28,12 +28,13 @@ function startGame() {
 }
 
 function startTimer() {
-    timer = setInterval(function() {
+    timer = setInterval(function () {
         timerCount--;
         timerElement.textContent = timerCount;
-        if (timerCount >= 0) {
-    }
-}, 6000);
+        if (timerCount <= 0) {
+            console.log("end time")
+        }
+    }, 6000);
 }
 
 function setNextQuestion() {
@@ -114,7 +115,7 @@ const questions = [
         answers: [
             { text: 'salad', correct: false},
             { text: 'text', correct: false},
-            { text: 'HyperTextMarkupLin', correct: true},
+            { text: 'HyperTextMarkupLink', correct: true},
             { text: 'link', correct: false}
         ]
     },
@@ -130,8 +131,8 @@ const questions = [
     {
         question: 'What is an array?',
         answers: [
-            { text: 'A string of Elements', correct: false},
-            { text: 'rainbow', correct: true},
+            { text: 'A string of Elements', correct: true},
+            { text: 'rainbow', correct: false},
             { text: 'Sunshine', correct: false},
             { text: 'water', correct: false}
         ]
